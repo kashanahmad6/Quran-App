@@ -22,7 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   void loadData() async {
     await Provider.of<ApiProvider>(context, listen: false).getSurahs();
-    // ignore: use_build_context_synchronously
+
     await Provider.of<ApiProvider>(context, listen: false).getcompleteQuran();
   }
 
